@@ -2,31 +2,24 @@
 
 Golang编写的一个rest API骨架项目
 
-## 配置
+## 如何部署
+### 启动参数
 
-目前的配置项从环境变量中读取，程序运行会导入`.env`文件中的环境变量
+| 参数名     | 必选  | 说明        |
+|---------|-----|-----------|
 
-已使用的配置项
 
-```yaml
-# APP
-APP_NAME
-APP_DEBUG
-
-  # GIN
-GIN_ADDR
-GIN_MODE
-
-  #DATABASE
-DATABASE_DSN
-
-  # REDIS
-REDIS_ADDR
-REDIS_PASSWORD
-REDIS_DATABASE
-REDIS_DIAL_TIMEOUT
+### 启动命令
+将命令中`<>`修改为实际的内容
+```bash
 ```
 
-## 鸣谢
+## 接口文档
 
-Mix Go [https://github.com/mix-go/mix](https://github.com/mix-go/mix)
+## 拦截规则
+
+| 请求来源                | 策略         |
+|---------------------|------------|
+
+
+> 403	Forbidden	服务器理解请求客户端的请求，但是拒绝执行此请求
